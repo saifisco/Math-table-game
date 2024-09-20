@@ -1,0 +1,60 @@
+$font: 28px;
+$size: 50px;
+body {
+  // position: relative;
+  margin: 0;
+  height: 100%;
+}
+#wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  // height: 300px;
+  padding: 10px;
+  border: 1px solid #00000022;
+  .header {
+    height: 50px;
+    font-size: $font;
+    display: flex;
+    margin-bottom: 10px;
+    .left {
+      display: flex;
+      line-height: 50px;
+      span {
+        display: block;
+        margin: 0 5px;
+      }
+    }
+    div {
+      //   border: solid;
+      flex-grow: 1;
+      input {
+        background-color: transparent;
+        border: 1px solid #00000077;
+        outline: none;
+        padding: 10px;
+        display: inline-block;
+        height: $size;
+        width: $size;
+        font-size: $font;
+      }
+    }
+  }
+  .choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    div {
+      text-align: center;
+      line-height: $size;
+      font-size: $font;
+      width: $size;
+      height: $size;
+      border: 1px solid #000;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
